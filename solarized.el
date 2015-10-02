@@ -1574,8 +1574,10 @@ customize the resulting theme."
                           :foreground ,blue :background ,base03))))
      `(org-agenda-done ((,class (:foreground ,base01 :slant italic))))
      `(org-archived ((,class (:foreground ,base01 :weight normal))))
-     `(org-block ((,class (:foreground ,base01))))
-     `(org-block-begin-line ((,class (:foreground ,base01 :slant italic))))
+     `(org-block ((,class (:foreground ,base01 :background "#FFFFEA"))))
+     `(org-block-background ((,class (:background "#FFFFEA"))))
+     `(org-block-begin-line ((,class (:underline ,s-line :foreground ,base01 :slant italic))))
+     `(org-block-end-line ((,class (:overline ,s-line :foreground ,base01 :slant italic))))
      `(org-checkbox ((,class (:background ,base03 :foreground ,base0
                                           :box (:line-width 1 :style released-button)))))
      `(org-code ((,class (:foreground ,base01))))
